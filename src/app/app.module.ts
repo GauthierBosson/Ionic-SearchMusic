@@ -11,7 +11,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { ArtistesPage } from "../pages/artistes/artistes";
 import { AlbumsPage } from "../pages/albums/albums";
 import { MusiquesPage } from "../pages/musiques/musiques";
-import {DetailsPage} from "../pages/details/details";
+import { DetailsPage } from "../pages/details/details";
 
 @NgModule({
   declarations: [
