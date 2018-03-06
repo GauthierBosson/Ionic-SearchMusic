@@ -12,6 +12,7 @@ import { ArtistesPage } from "../pages/artistes/artistes";
 import { AlbumsPage } from "../pages/albums/albums";
 import { MusiquesPage } from "../pages/musiques/musiques";
 import { DetailsPage } from "../pages/details/details";
+import { MusicServiceProvider } from '../providers/music-service/music-service';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { DetailsPage } from "../pages/details/details";
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    MusicServiceProvider
   ]
 })
 export class AppModule {}

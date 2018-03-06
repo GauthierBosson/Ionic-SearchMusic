@@ -22,8 +22,11 @@
           (ionCancel)="onCancel($event)">
   </ion-searchbar>
   <ion-grid>
-    <ion-row>
-      <ion-col col-xs-4>
+    <ion-row >
+      <ion-col *ngFor="let artiste of Artistes" col-4>
+        <ion-img [width]="100" [height]="100" src="{{artiste.pic}}" (click)="push()"></ion-img>
+      </ion-col>
+      <!--<ion-col col-xs-4>
         <ion-img [width]="100" [height]="100" src="../assets/imgs/color-198892_960_720.jpg" (click)="push()"></ion-img>
       </ion-col>
       <ion-col col-xs-4>
@@ -31,11 +34,7 @@
       </ion-col>
       <ion-col col-xs-4>
         <ion-img [width]="100" [height]="100" src="../assets/imgs/color-198892_960_720.jpg" (click)="push()"></ion-img>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col col-xs-6>Item</ion-col>
-      <ion-col col-xs-6>Item</ion-col>
+      </ion-col>-->
     </ion-row>
   </ion-grid>
   <!--<button ion-button block (click)="push()">Push New Page</button> -->
